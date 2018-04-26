@@ -1,0 +1,55 @@
+## Build generated
+build/
+DerivedData
+build.xcarchive
+*.dSYM.zip
+
+## Various settings
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+
+## Other
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+*.xcscmblueprint
+
+## Obj-C/Swift specific
+*.hmap
+*.ipa
+
+# Generated
+picme/Resources/Generated/*
+!picme/Resources/Generated/.gitkeep
+
+picmeTests/Resources/Generated/*
+!picmeTests/Resources/Generated/.gitkeep
+
+# CocoaPods
+Pods/
+
+# Carthage
+Carthage/Checkouts
+Carthage/Build
+
+# Fastlane
+fastlane/test_output/
+fastlane/report.xml
+
+# AppCode
+.idea/
+
+# Other
+.DS_Store
+output/
+derivedData/
+
+# Generamba templates
+Templates/
