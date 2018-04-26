@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PhotoCell" customModule="Find_Place" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p6a-Wk-zVW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <inset key="contentEdgeInsets" minX="-190" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="Фото">
+                            <color key="titleColor" red="0.027108883485198021" green="0.043685339391231537" blue="0.014733744785189629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group" translatesAutoresizingMaskIntoConstraints="NO" id="jnh-SD-yOw">
+                        <rect key="frame" x="8" y="8" width="40" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="4cw-m0-MTk"/>
+                            <constraint firstAttribute="height" constant="29" id="v2S-jY-TE9"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jnh-SD-yOw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="4zj-Bu-1vi"/>
+                    <constraint firstAttribute="trailing" secondItem="p6a-Wk-zVW" secondAttribute="trailing" id="9Bx-C2-qYo"/>
+                    <constraint firstItem="p6a-Wk-zVW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="CE0-zF-rgn"/>
+                    <constraint firstItem="p6a-Wk-zVW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="IGJ-Zr-a63"/>
+                    <constraint firstItem="jnh-SD-yOw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="iJ4-y3-wxF"/>
+                    <constraint firstAttribute="bottom" secondItem="p6a-Wk-zVW" secondAttribute="bottom" id="kue-dC-bHa"/>
+                    <constraint firstAttribute="bottom" secondItem="jnh-SD-yOw" secondAttribute="bottom" constant="6.5" id="p2f-M4-4Hs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="photoButton" destination="p6a-Wk-zVW" id="ntD-RH-ITd"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Group" width="40" height="29"/>
+    </resources>
+</document>

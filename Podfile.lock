@@ -1,0 +1,172 @@
+PODS:
+  - Bolts (1.8.4):
+    - Bolts/AppLinks (= 1.8.4)
+    - Bolts/Tasks (= 1.8.4)
+  - Bolts/AppLinks (1.8.4):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.8.4)
+  - Cosmos (11.0.3)
+  - Dip (5.1)
+  - Dip-UI (1.1):
+    - Dip (~> 5.0)
+  - DTModelStorage (5.1.0):
+    - DTModelStorage/Core (= 5.1.0)
+  - DTModelStorage/Core (5.1.0)
+  - DTTableViewManager (5.3.0):
+    - DTModelStorage (~> 5.0)
+  - FacebookCore (0.2.0):
+    - Bolts (~> 1.8)
+    - FBSDKCoreKit (~> 4.15)
+  - FacebookLogin (0.2.0):
+    - Bolts (~> 1.8)
+    - FacebookCore (~> 0.2)
+    - FBSDKCoreKit (~> 4.15)
+    - FBSDKLoginKit (~> 4.15)
+  - FBSDKCoreKit (4.25.0):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.25.0):
+    - FBSDKCoreKit
+  - Firebase/Auth (4.0.4):
+    - Firebase/Core
+    - FirebaseAuth (= 4.0.0)
+  - Firebase/Core (4.0.4):
+    - FirebaseAnalytics (= 4.0.2)
+    - FirebaseCore (= 4.0.4)
+  - Firebase/Database (4.0.4):
+    - Firebase/Core
+    - FirebaseDatabase (= 4.0.0)
+  - Firebase/Storage (4.0.4):
+    - Firebase/Core
+    - FirebaseStorage (= 2.0.0)
+  - FirebaseAnalytics (4.0.2):
+    - FirebaseCore (~> 4.0)
+    - FirebaseInstanceID (~> 2.0)
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseAuth (4.0.0):
+    - FirebaseAnalytics (~> 4.0)
+    - GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - FirebaseCore (4.0.4):
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+    - nanopb (~> 0.3)
+  - FirebaseDatabase (4.0.0):
+    - FirebaseAnalytics (~> 4.0)
+  - FirebaseInstanceID (2.0.0):
+    - FirebaseCore (~> 4.0)
+  - FirebaseStorage (2.0.0):
+    - FirebaseAnalytics (~> 4.0)
+    - FirebaseCore (~> 4.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GoogleMaps (2.3.1):
+    - GoogleMaps/Maps (= 2.3.1)
+  - GoogleMaps/Base (2.3.1)
+  - GoogleMaps/Maps (2.3.1):
+    - GoogleMaps/Base
+  - GooglePlacePicker (2.3.1):
+    - GoogleMaps (= 2.3.1)
+    - GooglePlaces (= 2.3.1)
+  - GooglePlaces (2.3.1):
+    - GoogleMaps/Base (= 2.3.1)
+  - GoogleSignIn (4.0.2):
+    - GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)
+    - GoogleToolboxForMac/NSString+URLArguments (~> 2.1)
+    - GTMOAuth2 (~> 1.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GoogleToolboxForMac/DebugUtils (2.1.1):
+    - GoogleToolboxForMac/Defines (= 2.1.1)
+  - GoogleToolboxForMac/Defines (2.1.1)
+  - GoogleToolboxForMac/NSData+zlib (2.1.1):
+    - GoogleToolboxForMac/Defines (= 2.1.1)
+  - GoogleToolboxForMac/NSDictionary+URLArguments (2.1.1):
+    - GoogleToolboxForMac/DebugUtils (= 2.1.1)
+    - GoogleToolboxForMac/Defines (= 2.1.1)
+    - GoogleToolboxForMac/NSString+URLArguments (= 2.1.1)
+  - GoogleToolboxForMac/NSString+URLArguments (2.1.1)
+  - GTMOAuth2 (1.1.4):
+    - GTMSessionFetcher (~> 1.1)
+  - GTMSessionFetcher (1.1.11):
+    - GTMSessionFetcher/Full (= 1.1.11)
+  - GTMSessionFetcher/Core (1.1.11)
+  - GTMSessionFetcher/Full (1.1.11):
+    - GTMSessionFetcher/Core (= 1.1.11)
+  - Marshal (1.2.4)
+  - nanopb (0.3.8):
+    - nanopb/decode (= 0.3.8)
+    - nanopb/encode (= 0.3.8)
+  - nanopb/decode (0.3.8)
+  - nanopb/encode (0.3.8)
+  - PromiseKit (4.3.1):
+    - PromiseKit/Foundation (= 4.3.1)
+    - PromiseKit/QuartzCore (= 4.3.1)
+    - PromiseKit/UIKit (= 4.3.1)
+  - PromiseKit/CoreLocation (4.3.1):
+    - PromiseKit/CorePromise
+  - PromiseKit/CorePromise (4.3.1)
+  - PromiseKit/Foundation (4.3.1):
+    - PromiseKit/CorePromise
+  - PromiseKit/QuartzCore (4.3.1):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (4.3.1):
+    - PromiseKit/CorePromise
+  - SwiftLint (0.21.0)
+  - TableKit (2.4.0)
+  - ViperKit (0.8.2):
+    - ViperKit/Core (= 0.8.2)
+  - ViperKit/Core (0.8.2)
+
+DEPENDENCIES:
+  - Cosmos (~> 11.0)
+  - Dip
+  - Dip-UI
+  - DTTableViewManager (~> 5.2)
+  - FacebookLogin
+  - Firebase/Auth
+  - Firebase/Core
+  - Firebase/Database
+  - Firebase/Storage
+  - GoogleMaps
+  - GooglePlacePicker
+  - GooglePlaces
+  - GoogleSignIn
+  - Marshal
+  - PromiseKit (~> 4.0)
+  - PromiseKit/CoreLocation
+  - SwiftLint
+  - TableKit
+  - ViperKit
+
+SPEC CHECKSUMS:
+  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  Cosmos: eb506859929f4add2d2aec822a27efb2f718a95d
+  Dip: f5a7bd4e1a8af48516e4adc0952d6efc29015589
+  Dip-UI: 1c64807d98d493281e87651921b80e1c2dce1f2c
+  DTModelStorage: 47c56a07c59a5381902b0b10b835d1a83d0ea9f2
+  DTTableViewManager: ce8b4e784979787690a2187088f0b77bbfdaa913
+  FacebookCore: 2cb3f0fbff218e9d3119cec84bae983b232412de
+  FacebookLogin: c9d606504735780a9e3002465a615512e0a691a5
+  FBSDKCoreKit: 53e3f4bfb64e80c5f229dd30ae33ff57fbbbd2d1
+  FBSDKLoginKit: f628c09684dae9c17f071cf90b014e886f5093ea
+  Firebase: 1492bf04e1b73a7353b4fb2cf5a20bac9692f341
+  FirebaseAnalytics: ad41720e3e67fc63fbe3d2948d3e26932a8de311
+  FirebaseAuth: ebb6abcbabae00fc47446d690c19ce68d8484fde
+  FirebaseCore: cfc042628ef9f20debe09c0eb683135fcd404cb4
+  FirebaseDatabase: d829b3a8c3e2ac7a16773c5df226966b0805dfc2
+  FirebaseInstanceID: 9fbf536668f4d3f0880e7438456dabd1376e294b
+  FirebaseStorage: 8110a1ed2034c8fbfd83890d2acc9cdbbd99afec
+  GoogleMaps: c66a71058b9b1294bcdd5463a68e357fa50c079f
+  GooglePlacePicker: fc3564ac7a2ce314e78e42bfc1e16822ad1e5488
+  GooglePlaces: 4a7b22debfa1af65017b82943431822607e45201
+  GoogleSignIn: d7ad83f13480e1f30453471d00d19b5293ac46af
+  GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
+  GTMOAuth2: 7fc9c10f5c745f4d9850419ea88889fe3baa6b7d
+  GTMSessionFetcher: 5ad62e8200fa00ed011fe5e08d27fef72c5b1429
+  Marshal: 8e04e6624e506921db7143b0bfd83caee03f32d6
+  nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  PromiseKit: 25a114b90b932ec8169b5736bd0881fe0efa93b5
+  SwiftLint: 6de8b2d15f43c482bdec2953b8cfd696faa876e8
+  TableKit: 106518f85b65390a4e7ba2ef13afb6b8c56ca89b
+  ViperKit: f01616cbd3e6ad489812c600d1af97f0c17c5185
+
+PODFILE CHECKSUM: b6c689c03531708f7af324b426c58d6ad365169b
+
+COCOAPODS: 1.2.1

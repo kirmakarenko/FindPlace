@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xbH-Y0-ipA">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Auth View Controller-->
+        <scene sceneID="5hh-fU-GwV">
+            <objects>
+                <viewController storyboardIdentifier="Auth" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9tr-cP-1hl" customClass="AuthViewController" customModule="Find_Place" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KU0-PR-uhT"/>
+                        <viewControllerLayoutGuide type="bottom" id="i09-pk-DVs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TxH-Tm-tf0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch image" translatesAutoresizingMaskIntoConstraints="NO" id="hfS-FH-EVJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fBa-T1-eQG" customClass="GIDSignInButton">
+                                <rect key="frame" x="67.5" y="457.5" width="240" height="52"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="TeP-gR-BOS"/>
+                                    <constraint firstAttribute="height" constant="52" id="qHB-VM-n5u"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="signIn:" destination="9tr-cP-1hl" eventType="valueChanged" id="i2r-Rb-KKf"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0010629586176946759" green="0.61509525775909424" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hfS-FH-EVJ" firstAttribute="top" secondItem="TxH-Tm-tf0" secondAttribute="top" id="EY2-Px-2tH"/>
+                            <constraint firstItem="i09-pk-DVs" firstAttribute="top" secondItem="hfS-FH-EVJ" secondAttribute="bottom" id="MKp-c1-re8"/>
+                            <constraint firstItem="fBa-T1-eQG" firstAttribute="centerX" secondItem="TxH-Tm-tf0" secondAttribute="centerX" id="Xrm-1I-4sF"/>
+                            <constraint firstItem="fBa-T1-eQG" firstAttribute="centerY" secondItem="TxH-Tm-tf0" secondAttribute="centerY" constant="150" id="c8n-nv-ao5"/>
+                            <constraint firstAttribute="trailing" secondItem="hfS-FH-EVJ" secondAttribute="trailing" id="qKt-Im-T5I"/>
+                            <constraint firstItem="hfS-FH-EVJ" firstAttribute="leading" secondItem="TxH-Tm-tf0" secondAttribute="leading" id="zdc-I8-8gd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="osH-Dh-sqc"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="nil" keyPath="dipTag"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="EuG-tz-IQj" kind="show" identifier="showMap" id="Uu4-pC-Hbg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YN6-vs-L1v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="404" y="162.3688155922039"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="84U-bq-wXw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xbH-Y0-ipA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="I3a-7z-bMs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9tr-cP-1hl" kind="relationship" relationship="rootViewController" id="HE7-0W-Amn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rk5-om-Xaw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-476" y="164"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="FfD-qz-TgC">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Map" storyboardName="Map" referencedIdentifier="Map" id="EuG-tz-IQj" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oZZ-Id-qsA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1134" y="162"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="launch image" width="564" height="845"/>
+    </resources>
+</document>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlacePriceCell" rowHeight="150" id="KGk-i7-Jjw" customClass="PlacePriceCell" customModule="Find_Place" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="363" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="363" height="149.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14:20-20:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1X-CL-YmP">
+                        <rect key="frame" x="62" y="108" width="97" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100-200" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7bO-Qh-H0b">
+                        <rect key="frame" x="272" y="108" width="67" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rouble-symbol" translatesAutoresizingMaskIntoConstraints="NO" id="tKA-M1-J9I">
+                        <rect key="frame" x="234" y="103" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="3Ns-6q-K1A"/>
+                            <constraint firstAttribute="height" constant="30" id="exe-CP-zXH"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="time" translatesAutoresizingMaskIntoConstraints="NO" id="9kA-Vk-QAQ">
+                        <rect key="frame" x="24" y="103.5" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="E0L-Vv-uo8"/>
+                            <constraint firstAttribute="height" constant="30" id="qge-jT-ee0"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location-pin" translatesAutoresizingMaskIntoConstraints="NO" id="Ki5-lS-tLJ">
+                        <rect key="frame" x="24" y="16" width="30" height="41"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="41" id="2iN-Os-l0F"/>
+                            <constraint firstAttribute="width" constant="30" id="a1D-ve-NGx"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ул Красная 156" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6r9-O3-sPb">
+                        <rect key="frame" x="62" y="26" width="122" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="7bO-Qh-H0b" firstAttribute="leading" secondItem="tKA-M1-J9I" secondAttribute="trailing" constant="8" id="82g-XS-sN5"/>
+                    <constraint firstItem="Ki5-lS-tLJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="16" id="9PB-pZ-h3I"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="tKA-M1-J9I" secondAttribute="bottom" constant="8" id="9U3-OQ-Hqj"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="7bO-Qh-H0b" secondAttribute="bottom" constant="12.5" id="CdR-i2-SDN"/>
+                    <constraint firstItem="9kA-Vk-QAQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="16" id="K7D-ep-g7R"/>
+                    <constraint firstItem="Ki5-lS-tLJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="Lv8-JK-p4f"/>
+                    <constraint firstItem="7bO-Qh-H0b" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="-16" id="T0B-ne-oe2"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="d1X-CL-YmP" secondAttribute="bottom" constant="12.5" id="TBR-WD-QJM"/>
+                    <constraint firstItem="d1X-CL-YmP" firstAttribute="leading" secondItem="9kA-Vk-QAQ" secondAttribute="trailing" constant="8" id="mQ7-4l-S61"/>
+                    <constraint firstItem="6r9-O3-sPb" firstAttribute="leading" secondItem="Ki5-lS-tLJ" secondAttribute="trailing" constant="8" id="nAW-If-1AL"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="9kA-Vk-QAQ" secondAttribute="bottom" constant="8" id="sKu-ie-6ys"/>
+                    <constraint firstItem="6r9-O3-sPb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="18" id="xhV-K0-dmM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addressLabel" destination="6r9-O3-sPb" id="MEJ-9I-jmg"/>
+                <outlet property="priceLabel" destination="7bO-Qh-H0b" id="kEY-bw-ksh"/>
+                <outlet property="timeLabel" destination="d1X-CL-YmP" id="XXz-oT-Dys"/>
+            </connections>
+            <point key="canvasLocation" x="55.5" y="100"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="location-pin" width="30" height="44"/>
+        <image name="rouble-symbol" width="30" height="30"/>
+        <image name="time" width="30" height="30"/>
+    </resources>
+</document>

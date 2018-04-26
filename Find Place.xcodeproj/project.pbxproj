@@ -1,0 +1,1386 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5C92358DF6FA527402204EA0 /* Pods_Find_Place.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA403798D9B0D7765FB2638D /* Pods_Find_Place.framework */; };
+		5FE2AEE8A2DA700FCDC4BEA5 /* Pods_Find_PlaceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9652EBC497389FF295F55EBB /* Pods_Find_PlaceTests.framework */; };
+		A41640761F3B02C00014CF1D /* MarkerWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41640751F3B02C00014CF1D /* MarkerWindow.swift */; };
+		A41640781F3B03030014CF1D /* MarkerWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A41640771F3B03030014CF1D /* MarkerWindow.xib */; };
+		A416407F1F3B3E730014CF1D /* PlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A416407E1F3B3E730014CF1D /* PlaceViewController.swift */; };
+		A41640811F3B404A0014CF1D /* PlaceDisplayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41640801F3B404A0014CF1D /* PlaceDisplayManager.swift */; };
+		A41640841F3B5BE60014CF1D /* MapModuleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41640831F3B5BE60014CF1D /* MapModuleIO.swift */; };
+		A41640881F3C31640014CF1D /* PlacePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41640871F3C31640014CF1D /* PlacePresenter.swift */; };
+		A416408A1F3C31710014CF1D /* PlaceRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41640891F3C31710014CF1D /* PlaceRouter.swift */; };
+		A416408F1F3C31C30014CF1D /* PlaceViewControllerIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A416408E1F3C31C30014CF1D /* PlaceViewControllerIO.swift */; };
+		A41640931F3C39FE0014CF1D /* PlaceModuleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41640921F3C39FE0014CF1D /* PlaceModuleIO.swift */; };
+		A416409F1F3C6ED40014CF1D /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A416409D1F3C6ED40014CF1D /* PhotoCell.swift */; };
+		A41640A01F3C6ED40014CF1D /* PhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A416409E1F3C6ED40014CF1D /* PhotoCell.xib */; };
+		A41640A31F3C84700014CF1D /* PlaceInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41640A21F3C84700014CF1D /* PlaceInteractorImpl.swift */; };
+		A41640A51F3C84D10014CF1D /* PlaceInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41640A41F3C84D10014CF1D /* PlaceInteractorIO.swift */; };
+		A41640A81F3DA88E0014CF1D /* PriceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41640A61F3DA88E0014CF1D /* PriceCell.swift */; };
+		A41640A91F3DA88E0014CF1D /* PriceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A41640A71F3DA88E0014CF1D /* PriceCell.xib */; };
+		A41640AC1F3DEC5B0014CF1D /* PlacePriceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41640AA1F3DEC5B0014CF1D /* PlacePriceCell.swift */; };
+		A41640AD1F3DEC5B0014CF1D /* PlacePriceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A41640AB1F3DEC5B0014CF1D /* PlacePriceCell.xib */; };
+		A41640B01F3DF9350014CF1D /* WorkingHoursCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41640AE1F3DF9350014CF1D /* WorkingHoursCell.swift */; };
+		A41640B11F3DF9350014CF1D /* WorkingHoursCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A41640AF1F3DF9350014CF1D /* WorkingHoursCell.xib */; };
+		A41F62D81F41B2A8006BB57D /* AddressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41F62D61F41B2A8006BB57D /* AddressCell.swift */; };
+		A41F62D91F41B2A8006BB57D /* AddressCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A41F62D71F41B2A8006BB57D /* AddressCell.xib */; };
+		A4316D781F42DD87009ED368 /* AddDisplayManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4316D771F42DD87009ED368 /* AddDisplayManagerDelegate.swift */; };
+		A4316D7C1F42F35A009ED368 /* AddPlaceRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4316D7B1F42F35A009ED368 /* AddPlaceRouter.swift */; };
+		A4316D7E1F42F597009ED368 /* AddPlaceModuleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4316D7D1F42F597009ED368 /* AddPlaceModuleIO.swift */; };
+		A4316D921F44275A009ED368 /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4316D911F44275A009ED368 /* Assembly.swift */; };
+		A4316D951F44294F009ED368 /* AuthModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4316D941F44294F009ED368 /* AuthModuleAssembly.swift */; };
+		A4316D981F442D56009ED368 /* PresentationLayerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4316D971F442D56009ED368 /* PresentationLayerAssembly.swift */; };
+		A4316D9A1F442E6F009ED368 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4316D991F442E6F009ED368 /* main.swift */; };
+		A4AAB7D61F3877BA001D567A /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AAB7D51F3877BA001D567A /* AuthViewController.swift */; };
+		A4AAB7E41F389E07001D567A /* MapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AAB7E31F389E07001D567A /* MapRouter.swift */; };
+		A4AAB7E91F38A8B3001D567A /* AuthPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AAB7E81F38A8B3001D567A /* AuthPresenter.swift */; };
+		A4AAB7EB1F38A8BE001D567A /* AuthRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AAB7EA1F38A8BE001D567A /* AuthRouter.swift */; };
+		A4AAB7ED1F38A8DE001D567A /* AuthViewControllerIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AAB7EC1F38A8DE001D567A /* AuthViewControllerIO.swift */; };
+		A4AAB7F51F39CF99001D567A /* PlaceM.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AAB7F41F39CF99001D567A /* PlaceM.swift */; };
+		A4AAB8181F39DBAB001D567A /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4AAB8171F39DBAB001D567A /* Map.storyboard */; };
+		A4AAB81A1F39DBD0001D567A /* AddPlace.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4AAB8191F39DBD0001D567A /* AddPlace.storyboard */; };
+		A4AAB81D1F39E804001D567A /* place.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4AAB81C1F39E804001D567A /* place.storyboard */; };
+		A4B4F8C21F3496C60024D6E2 /* MapViewControllerIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B4F8C11F3496C60024D6E2 /* MapViewControllerIO.swift */; };
+		A4CE14CB1F443237006BE033 /* ApplicationInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CE14CA1F443237006BE033 /* ApplicationInitializer.swift */; };
+		A4CE14CE1F443270006BE033 /* ApplicationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CE14CD1F443270006BE033 /* ApplicationAssembly.swift */; };
+		A4CE14D31F443F62006BE033 /* ServiceLayerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CE14D21F443F62006BE033 /* ServiceLayerAssembly.swift */; };
+		A4CE14D61F4442E4006BE033 /* MapModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CE14D51F4442E4006BE033 /* MapModuleAssembly.swift */; };
+		A4CE14D91F445D69006BE033 /* AddPlaceModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CE14D81F445D69006BE033 /* AddPlaceModuleAssembly.swift */; };
+		A4CE14DC1F446A6D006BE033 /* PlaceModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CE14DB1F446A6D006BE033 /* PlaceModuleAssembly.swift */; };
+		A4D50D521F458B4600962835 /* AuthViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D50D511F458B4600962835 /* AuthViewControllerTests.swift */; };
+		A4D50D551F45903C00962835 /* AuthViewOutputMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D50D541F45903C00962835 /* AuthViewOutputMock.swift */; };
+		A4D50D571F45924700962835 /* AuthPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D50D561F45924700962835 /* AuthPresenterTests.swift */; };
+		A4D50D591F45938A00962835 /* AuthRouterInputMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D50D581F45938A00962835 /* AuthRouterInputMock.swift */; };
+		A4D50D5B1F4593F800962835 /* AuthInteractorInputMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D50D5A1F4593F800962835 /* AuthInteractorInputMock.swift */; };
+		A4D50D5D1F45A12D00962835 /* AuthInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D50D5C1F45A12D00962835 /* AuthInteractorTests.swift */; };
+		A4D50D611F45A56C00962835 /* AuthInteractorOutputMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D50D601F45A56C00962835 /* AuthInteractorOutputMock.swift */; };
+		A4D50D661F45AF2800962835 /* PlaceMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D50D651F45AF2800962835 /* PlaceMarker.swift */; };
+		A4D50D681F45B68B00962835 /* MapDisplayManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D50D671F45B68B00962835 /* MapDisplayManagerDelegate.swift */; };
+		A4D50D6B1F45D03B00962835 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D50D6A1F45D03B00962835 /* LocationService.swift */; };
+		A4D50D6D1F45D04B00962835 /* LocationServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D50D6C1F45D04B00962835 /* LocationServiceImpl.swift */; };
+		A4DBA0FD1F321AFD00999879 /* AddDisplayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DBA0FC1F321AFD00999879 /* AddDisplayManager.swift */; };
+		A4DBA1021F321E5D00999879 /* MapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DBA1011F321E5D00999879 /* MapCell.swift */; };
+		A4DDBE811F46E6D100E46388 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4DDBE801F46E6D100E46388 /* Assets.xcassets */; };
+		A4DDBE8C1F472A7B00E46388 /* AddDisplayManagerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DDBE8B1F472A7B00E46388 /* AddDisplayManagerDataSource.swift */; };
+		A4E484371F4ABB9C00079E39 /* AddDisplayManagerActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E484361F4ABB9C00079E39 /* AddDisplayManagerActions.swift */; };
+		A4E617171F3365FB00B40299 /* MapCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4E617151F3365FB00B40299 /* MapCell.xib */; };
+		A4E6171A1F336A7C00B40299 /* NameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E617181F336A7C00B40299 /* NameCell.swift */; };
+		A4E6171B1F336A7C00B40299 /* NameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4E617191F336A7C00B40299 /* NameCell.xib */; };
+		A4E6172A1F34499700B40299 /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E617291F34499700B40299 /* MapPresenter.swift */; };
+		A4E6172D1F344D9C00B40299 /* MapInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E6172C1F344D9C00B40299 /* MapInteractorIO.swift */; };
+		A4E6172F1F344DB900B40299 /* MapInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E6172E1F344DB900B40299 /* MapInteractorImpl.swift */; };
+		A4E617321F344E5000B40299 /* AddPlaceInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E617311F344E5000B40299 /* AddPlaceInteractorIO.swift */; };
+		A4E617341F344E8A00B40299 /* AddPlaceInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E617331F344E8A00B40299 /* AddPlaceInteractorImpl.swift */; };
+		A4E617361F344F0200B40299 /* AddPlacePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E617351F344F0200B40299 /* AddPlacePresenter.swift */; };
+		A4E6173E1F345F7700B40299 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E6173D1F345F7700B40299 /* FirebaseService.swift */; };
+		A4E617401F345F8400B40299 /* FirebaseServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E6173F1F345F8400B40299 /* FirebaseServiceImpl.swift */; };
+		A4E617421F3461B400B40299 /* AddPlaceViewControllerIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E617411F3461B400B40299 /* AddPlaceViewControllerIO.swift */; };
+		A4EBF3851F306B4700CBF1D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EBF3841F306B4700CBF1D7 /* AppDelegate.swift */; };
+		A4EBF3871F306B4700CBF1D7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EBF3861F306B4700CBF1D7 /* MapViewController.swift */; };
+		A4EBF38F1F306B4700CBF1D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4EBF38D1F306B4700CBF1D7 /* LaunchScreen.storyboard */; };
+		A4EBF3971F3085BB00CBF1D7 /* AuthMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4EBF3961F3085BB00CBF1D7 /* AuthMain.storyboard */; };
+		A4EBF3991F309B9500CBF1D7 /* MapDisplayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EBF3981F309B9500CBF1D7 /* MapDisplayManager.swift */; };
+		A4EBF39D1F30C4B600CBF1D7 /* AddPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EBF39C1F30C4B600CBF1D7 /* AddPlaceViewController.swift */; };
+		A4EBF3A11F31B3EC00CBF1D7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4EBF3A01F31B3EC00CBF1D7 /* CoreLocation.framework */; };
+		A4EBF3A41F31C08F00CBF1D7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4EBF3A31F31C08F00CBF1D7 /* GoogleService-Info.plist */; };
+		A4F5DCA91F4582BD00B0EB97 /* AuthRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F5DCA81F4582BD00B0EB97 /* AuthRouterInput.swift */; };
+		A4F5DCAC1F45830A00B0EB97 /* AuthInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F5DCAB1F45830A00B0EB97 /* AuthInteractorIO.swift */; };
+		A4F5DCAE1F4583A200B0EB97 /* AuthInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F5DCAD1F4583A200B0EB97 /* AuthInteractor.swift */; };
+		A4F83EB11F4EE55800153F80 /* UINavigationBar+States.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F83EB01F4EE55800153F80 /* UINavigationBar+States.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A4D50D471F458A4000962835 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4EBF3791F306B4700CBF1D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4EBF3801F306B4700CBF1D7;
+			remoteInfo = "Find Place";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2E1E766F83B75D2C0920D70A /* Pods-Find PlaceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Find PlaceTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Find PlaceTests/Pods-Find PlaceTests.debug.xcconfig"; sourceTree = "<group>"; };
+		81030B75D2643790F469CC71 /* Pods-Find Place.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Find Place.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Find Place/Pods-Find Place.debug.xcconfig"; sourceTree = "<group>"; };
+		9652EBC497389FF295F55EBB /* Pods_Find_PlaceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Find_PlaceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A41640751F3B02C00014CF1D /* MarkerWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkerWindow.swift; sourceTree = "<group>"; };
+		A41640771F3B03030014CF1D /* MarkerWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MarkerWindow.xib; sourceTree = "<group>"; };
+		A416407E1F3B3E730014CF1D /* PlaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceViewController.swift; sourceTree = "<group>"; };
+		A41640801F3B404A0014CF1D /* PlaceDisplayManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceDisplayManager.swift; sourceTree = "<group>"; };
+		A41640831F3B5BE60014CF1D /* MapModuleIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapModuleIO.swift; sourceTree = "<group>"; };
+		A41640871F3C31640014CF1D /* PlacePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacePresenter.swift; sourceTree = "<group>"; };
+		A41640891F3C31710014CF1D /* PlaceRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceRouter.swift; sourceTree = "<group>"; };
+		A416408E1F3C31C30014CF1D /* PlaceViewControllerIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceViewControllerIO.swift; sourceTree = "<group>"; };
+		A41640921F3C39FE0014CF1D /* PlaceModuleIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceModuleIO.swift; sourceTree = "<group>"; };
+		A416409D1F3C6ED40014CF1D /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		A416409E1F3C6ED40014CF1D /* PhotoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoCell.xib; sourceTree = "<group>"; };
+		A41640A21F3C84700014CF1D /* PlaceInteractorImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceInteractorImpl.swift; sourceTree = "<group>"; };
+		A41640A41F3C84D10014CF1D /* PlaceInteractorIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceInteractorIO.swift; sourceTree = "<group>"; };
+		A41640A61F3DA88E0014CF1D /* PriceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceCell.swift; sourceTree = "<group>"; };
+		A41640A71F3DA88E0014CF1D /* PriceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PriceCell.xib; sourceTree = "<group>"; };
+		A41640AA1F3DEC5B0014CF1D /* PlacePriceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacePriceCell.swift; sourceTree = "<group>"; };
+		A41640AB1F3DEC5B0014CF1D /* PlacePriceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlacePriceCell.xib; sourceTree = "<group>"; };
+		A41640AE1F3DF9350014CF1D /* WorkingHoursCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkingHoursCell.swift; sourceTree = "<group>"; };
+		A41640AF1F3DF9350014CF1D /* WorkingHoursCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WorkingHoursCell.xib; sourceTree = "<group>"; };
+		A41F62D61F41B2A8006BB57D /* AddressCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressCell.swift; sourceTree = "<group>"; };
+		A41F62D71F41B2A8006BB57D /* AddressCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressCell.xib; sourceTree = "<group>"; };
+		A4316D771F42DD87009ED368 /* AddDisplayManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDisplayManagerDelegate.swift; sourceTree = "<group>"; };
+		A4316D7B1F42F35A009ED368 /* AddPlaceRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPlaceRouter.swift; sourceTree = "<group>"; };
+		A4316D7D1F42F597009ED368 /* AddPlaceModuleIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPlaceModuleIO.swift; sourceTree = "<group>"; };
+		A4316D911F44275A009ED368 /* Assembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
+		A4316D941F44294F009ED368 /* AuthModuleAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthModuleAssembly.swift; sourceTree = "<group>"; };
+		A4316D971F442D56009ED368 /* PresentationLayerAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationLayerAssembly.swift; sourceTree = "<group>"; };
+		A4316D991F442E6F009ED368 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A4AAB7D51F3877BA001D567A /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		A4AAB7E31F389E07001D567A /* MapRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapRouter.swift; sourceTree = "<group>"; };
+		A4AAB7E81F38A8B3001D567A /* AuthPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthPresenter.swift; sourceTree = "<group>"; };
+		A4AAB7EA1F38A8BE001D567A /* AuthRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthRouter.swift; sourceTree = "<group>"; };
+		A4AAB7EC1F38A8DE001D567A /* AuthViewControllerIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewControllerIO.swift; sourceTree = "<group>"; };
+		A4AAB7F41F39CF99001D567A /* PlaceM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceM.swift; sourceTree = "<group>"; };
+		A4AAB8171F39DBAB001D567A /* Map.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
+		A4AAB8191F39DBD0001D567A /* AddPlace.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddPlace.storyboard; sourceTree = "<group>"; };
+		A4AAB81C1F39E804001D567A /* place.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = place.storyboard; sourceTree = "<group>"; };
+		A4B4F8C11F3496C60024D6E2 /* MapViewControllerIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewControllerIO.swift; sourceTree = "<group>"; };
+		A4CE14CA1F443237006BE033 /* ApplicationInitializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationInitializer.swift; sourceTree = "<group>"; };
+		A4CE14CD1F443270006BE033 /* ApplicationAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationAssembly.swift; sourceTree = "<group>"; };
+		A4CE14D21F443F62006BE033 /* ServiceLayerAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceLayerAssembly.swift; sourceTree = "<group>"; };
+		A4CE14D51F4442E4006BE033 /* MapModuleAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapModuleAssembly.swift; sourceTree = "<group>"; };
+		A4CE14D81F445D69006BE033 /* AddPlaceModuleAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPlaceModuleAssembly.swift; sourceTree = "<group>"; };
+		A4CE14DB1F446A6D006BE033 /* PlaceModuleAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceModuleAssembly.swift; sourceTree = "<group>"; };
+		A4D50D421F458A4000962835 /* Find PlaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Find PlaceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4D50D461F458A4000962835 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4D50D511F458B4600962835 /* AuthViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewControllerTests.swift; sourceTree = "<group>"; };
+		A4D50D541F45903C00962835 /* AuthViewOutputMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewOutputMock.swift; sourceTree = "<group>"; };
+		A4D50D561F45924700962835 /* AuthPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthPresenterTests.swift; sourceTree = "<group>"; };
+		A4D50D581F45938A00962835 /* AuthRouterInputMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthRouterInputMock.swift; sourceTree = "<group>"; };
+		A4D50D5A1F4593F800962835 /* AuthInteractorInputMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthInteractorInputMock.swift; sourceTree = "<group>"; };
+		A4D50D5C1F45A12D00962835 /* AuthInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthInteractorTests.swift; sourceTree = "<group>"; };
+		A4D50D601F45A56C00962835 /* AuthInteractorOutputMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthInteractorOutputMock.swift; sourceTree = "<group>"; };
+		A4D50D651F45AF2800962835 /* PlaceMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceMarker.swift; sourceTree = "<group>"; };
+		A4D50D671F45B68B00962835 /* MapDisplayManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapDisplayManagerDelegate.swift; sourceTree = "<group>"; };
+		A4D50D6A1F45D03B00962835 /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		A4D50D6C1F45D04B00962835 /* LocationServiceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationServiceImpl.swift; sourceTree = "<group>"; };
+		A4DBA0FC1F321AFD00999879 /* AddDisplayManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDisplayManager.swift; sourceTree = "<group>"; };
+		A4DBA1011F321E5D00999879 /* MapCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapCell.swift; sourceTree = "<group>"; };
+		A4DDBE801F46E6D100E46388 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A4DDBE8B1F472A7B00E46388 /* AddDisplayManagerDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDisplayManagerDataSource.swift; sourceTree = "<group>"; };
+		A4E484361F4ABB9C00079E39 /* AddDisplayManagerActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDisplayManagerActions.swift; sourceTree = "<group>"; };
+		A4E617151F3365FB00B40299 /* MapCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapCell.xib; sourceTree = "<group>"; };
+		A4E617181F336A7C00B40299 /* NameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameCell.swift; sourceTree = "<group>"; };
+		A4E617191F336A7C00B40299 /* NameCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NameCell.xib; sourceTree = "<group>"; };
+		A4E617291F34499700B40299 /* MapPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
+		A4E6172C1F344D9C00B40299 /* MapInteractorIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapInteractorIO.swift; sourceTree = "<group>"; };
+		A4E6172E1F344DB900B40299 /* MapInteractorImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapInteractorImpl.swift; sourceTree = "<group>"; };
+		A4E617311F344E5000B40299 /* AddPlaceInteractorIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPlaceInteractorIO.swift; sourceTree = "<group>"; };
+		A4E617331F344E8A00B40299 /* AddPlaceInteractorImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPlaceInteractorImpl.swift; sourceTree = "<group>"; };
+		A4E617351F344F0200B40299 /* AddPlacePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPlacePresenter.swift; sourceTree = "<group>"; };
+		A4E6173D1F345F7700B40299 /* FirebaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
+		A4E6173F1F345F8400B40299 /* FirebaseServiceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseServiceImpl.swift; sourceTree = "<group>"; };
+		A4E617411F3461B400B40299 /* AddPlaceViewControllerIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPlaceViewControllerIO.swift; sourceTree = "<group>"; };
+		A4EBF3811F306B4700CBF1D7 /* Find Place.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Find Place.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4EBF3841F306B4700CBF1D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A4EBF3861F306B4700CBF1D7 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		A4EBF38E1F306B4700CBF1D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A4EBF3901F306B4700CBF1D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4EBF3961F3085BB00CBF1D7 /* AuthMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AuthMain.storyboard; sourceTree = "<group>"; };
+		A4EBF3981F309B9500CBF1D7 /* MapDisplayManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapDisplayManager.swift; sourceTree = "<group>"; };
+		A4EBF39C1F30C4B600CBF1D7 /* AddPlaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPlaceViewController.swift; sourceTree = "<group>"; };
+		A4EBF3A01F31B3EC00CBF1D7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A4EBF3A31F31C08F00CBF1D7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A4F5DCA81F4582BD00B0EB97 /* AuthRouterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthRouterInput.swift; sourceTree = "<group>"; };
+		A4F5DCAB1F45830A00B0EB97 /* AuthInteractorIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthInteractorIO.swift; sourceTree = "<group>"; };
+		A4F5DCAD1F4583A200B0EB97 /* AuthInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthInteractor.swift; sourceTree = "<group>"; };
+		A4F83EB01F4EE55800153F80 /* UINavigationBar+States.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+States.swift"; sourceTree = "<group>"; };
+		AA403798D9B0D7765FB2638D /* Pods_Find_Place.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Find_Place.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0537AC1133843F46ADD1DC3 /* Pods-Find PlaceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Find PlaceTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Find PlaceTests/Pods-Find PlaceTests.release.xcconfig"; sourceTree = "<group>"; };
+		C6E2A49CA973E90FDE52C06E /* Pods-Find Place.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Find Place.release.xcconfig"; path = "Pods/Target Support Files/Pods-Find Place/Pods-Find Place.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A4D50D3F1F458A4000962835 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FE2AEE8A2DA700FCDC4BEA5 /* Pods_Find_PlaceTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4EBF37E1F306B4700CBF1D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4EBF3A11F31B3EC00CBF1D7 /* CoreLocation.framework in Frameworks */,
+				5C92358DF6FA527402204EA0 /* Pods_Find_Place.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		060334958ED775DF361EAA34 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4EBF3A01F31B3EC00CBF1D7 /* CoreLocation.framework */,
+				AA403798D9B0D7765FB2638D /* Pods_Find_Place.framework */,
+				9652EBC497389FF295F55EBB /* Pods_Find_PlaceTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		75F8B43612D4D5D9DB4EF708 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				81030B75D2643790F469CC71 /* Pods-Find Place.debug.xcconfig */,
+				C6E2A49CA973E90FDE52C06E /* Pods-Find Place.release.xcconfig */,
+				2E1E766F83B75D2C0920D70A /* Pods-Find PlaceTests.debug.xcconfig */,
+				C0537AC1133843F46ADD1DC3 /* Pods-Find PlaceTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A41640791F3B3DC20014CF1D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A416407E1F3B3E730014CF1D /* PlaceViewController.swift */,
+				A416408E1F3C31C30014CF1D /* PlaceViewControllerIO.swift */,
+				A41640821F3B404E0014CF1D /* Display Manager */,
+				A41640941F3C4C2B0014CF1D /* Cells */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A416407A1F3B3DC80014CF1D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				A41640891F3C31710014CF1D /* PlaceRouter.swift */,
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
+		A416407B1F3B3DD30014CF1D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A41640871F3C31640014CF1D /* PlacePresenter.swift */,
+				A41640921F3C39FE0014CF1D /* PlaceModuleIO.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		A416407D1F3B3E050014CF1D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				A41640A11F3C84440014CF1D /* Interactor */,
+				A41640791F3B3DC20014CF1D /* View */,
+				A416407B1F3B3DD30014CF1D /* Presenter */,
+				A416407A1F3B3DC80014CF1D /* Router */,
+				A4CE14DA1F446A3A006BE033 /* Assembly */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		A41640821F3B404E0014CF1D /* Display Manager */ = {
+			isa = PBXGroup;
+			children = (
+				A41640801F3B404A0014CF1D /* PlaceDisplayManager.swift */,
+			);
+			name = "Display Manager";
+			sourceTree = "<group>";
+		};
+		A41640941F3C4C2B0014CF1D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A41640AA1F3DEC5B0014CF1D /* PlacePriceCell.swift */,
+				A41640AB1F3DEC5B0014CF1D /* PlacePriceCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		A41640991F3C610F0014CF1D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				A4E617301F344E3800B40299 /* Interactor */,
+				A4DBA1001F321BF300999879 /* View */,
+				A4E616E41F3332B800B40299 /* Presenter */,
+				A4316D7A1F42F33F009ED368 /* Router */,
+				A4CE14D71F445D2A006BE033 /* Assembly */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		A416409A1F3C612A0014CF1D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				A4E6172B1F344D8500B40299 /* Interactor */,
+				A4DBA0FF1F321BE900999879 /* View */,
+				A4AAB7E21F389DE8001D567A /* Router */,
+				A4E617281F34497000B40299 /* Presenter */,
+				A4CE14D41F4442C3006BE033 /* Assembly */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		A41640A11F3C84440014CF1D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A41640A21F3C84700014CF1D /* PlaceInteractorImpl.swift */,
+				A41640A41F3C84D10014CF1D /* PlaceInteractorIO.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		A4316D7A1F42F33F009ED368 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				A4316D7B1F42F35A009ED368 /* AddPlaceRouter.swift */,
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
+		A4316D8F1F44273A009ED368 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A4316D901F442744009ED368 /* Assemblies */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		A4316D901F442744009ED368 /* Assemblies */ = {
+			isa = PBXGroup;
+			children = (
+				A4316D911F44275A009ED368 /* Assembly.swift */,
+			);
+			name = Assemblies;
+			sourceTree = "<group>";
+		};
+		A4316D931F442938009ED368 /* AuthModule */ = {
+			isa = PBXGroup;
+			children = (
+				A4F5DCAA1F4582ED00B0EB97 /* Interactor */,
+				A4AAB7E51F38A87E001D567A /* View */,
+				A4AAB7E61F38A887001D567A /* Presenter */,
+				A4AAB7E71F38A896001D567A /* Router */,
+				A4AAB7EE1F38AB43001D567A /* Assembly */,
+			);
+			name = AuthModule;
+			sourceTree = "<group>";
+		};
+		A4316D961F442D38009ED368 /* Assemblies */ = {
+			isa = PBXGroup;
+			children = (
+				A4316D971F442D56009ED368 /* PresentationLayerAssembly.swift */,
+			);
+			name = Assemblies;
+			sourceTree = "<group>";
+		};
+		A4AAB7E21F389DE8001D567A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				A4AAB7E31F389E07001D567A /* MapRouter.swift */,
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
+		A4AAB7E51F38A87E001D567A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A4AAB7D51F3877BA001D567A /* AuthViewController.swift */,
+				A4AAB7EC1F38A8DE001D567A /* AuthViewControllerIO.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A4AAB7E61F38A887001D567A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A4AAB7E81F38A8B3001D567A /* AuthPresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		A4AAB7E71F38A896001D567A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				A4F5DCA81F4582BD00B0EB97 /* AuthRouterInput.swift */,
+				A4AAB7EA1F38A8BE001D567A /* AuthRouter.swift */,
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
+		A4AAB7EE1F38AB43001D567A /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				A4316D941F44294F009ED368 /* AuthModuleAssembly.swift */,
+			);
+			name = Assembly;
+			sourceTree = "<group>";
+		};
+		A4AAB7F11F38B2C4001D567A /* UserStories */ = {
+			isa = PBXGroup;
+			children = (
+				A4AAB7F21F38B2D6001D567A /* AuthUserStory */,
+				A4EBF39E1F31A5B100CBF1D7 /* MapUserStory */,
+				A4EBF39F1F31A5CC00CBF1D7 /* AddPlaceUserStory */,
+				A4AAB81B1F39E7E2001D567A /* PlaceUserStory */,
+			);
+			name = UserStories;
+			sourceTree = "<group>";
+		};
+		A4AAB7F21F38B2D6001D567A /* AuthUserStory */ = {
+			isa = PBXGroup;
+			children = (
+				A4EBF3961F3085BB00CBF1D7 /* AuthMain.storyboard */,
+				A4AAB7F31F38B2E5001D567A /* Modules */,
+			);
+			name = AuthUserStory;
+			sourceTree = "<group>";
+		};
+		A4AAB7F31F38B2E5001D567A /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				A4316D931F442938009ED368 /* AuthModule */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		A4AAB81B1F39E7E2001D567A /* PlaceUserStory */ = {
+			isa = PBXGroup;
+			children = (
+				A4AAB81C1F39E804001D567A /* place.storyboard */,
+				A416407D1F3B3E050014CF1D /* Modules */,
+			);
+			name = PlaceUserStory;
+			sourceTree = "<group>";
+		};
+		A4CE14CC1F44325A006BE033 /* Assemblies */ = {
+			isa = PBXGroup;
+			children = (
+				A4CE14CD1F443270006BE033 /* ApplicationAssembly.swift */,
+			);
+			name = Assemblies;
+			sourceTree = "<group>";
+		};
+		A4CE14CF1F443B79006BE033 /* Assemblies */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Assemblies;
+			sourceTree = "<group>";
+		};
+		A4CE14D41F4442C3006BE033 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				A4CE14D51F4442E4006BE033 /* MapModuleAssembly.swift */,
+			);
+			name = Assembly;
+			sourceTree = "<group>";
+		};
+		A4CE14D71F445D2A006BE033 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				A4CE14D81F445D69006BE033 /* AddPlaceModuleAssembly.swift */,
+			);
+			name = Assembly;
+			sourceTree = "<group>";
+		};
+		A4CE14DA1F446A3A006BE033 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				A4CE14DB1F446A6D006BE033 /* PlaceModuleAssembly.swift */,
+			);
+			name = Assembly;
+			sourceTree = "<group>";
+		};
+		A4D50D431F458A4000962835 /* Find PlaceTests */ = {
+			isa = PBXGroup;
+			children = (
+				A4D50D4D1F458AD600962835 /* PresentationLayerTests */,
+				A4D50D4C1F458AC800962835 /* Supporting Files */,
+			);
+			path = "Find PlaceTests";
+			sourceTree = "<group>";
+		};
+		A4D50D4C1F458AC800962835 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A4D50D461F458A4000962835 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A4D50D4D1F458AD600962835 /* PresentationLayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				A4D50D4E1F458AE300962835 /* AuthModuleTests */,
+			);
+			name = PresentationLayerTests;
+			sourceTree = "<group>";
+		};
+		A4D50D4E1F458AE300962835 /* AuthModuleTests */ = {
+			isa = PBXGroup;
+			children = (
+				A4D50D531F45902700962835 /* Mocks */,
+				A4D50D511F458B4600962835 /* AuthViewControllerTests.swift */,
+				A4D50D561F45924700962835 /* AuthPresenterTests.swift */,
+				A4D50D5C1F45A12D00962835 /* AuthInteractorTests.swift */,
+			);
+			name = AuthModuleTests;
+			sourceTree = "<group>";
+		};
+		A4D50D531F45902700962835 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				A4D50D541F45903C00962835 /* AuthViewOutputMock.swift */,
+				A4D50D581F45938A00962835 /* AuthRouterInputMock.swift */,
+				A4D50D5A1F4593F800962835 /* AuthInteractorInputMock.swift */,
+				A4D50D601F45A56C00962835 /* AuthInteractorOutputMock.swift */,
+			);
+			name = Mocks;
+			sourceTree = "<group>";
+		};
+		A4D50D641F45AF1200962835 /* Markers */ = {
+			isa = PBXGroup;
+			children = (
+				A41640771F3B03030014CF1D /* MarkerWindow.xib */,
+				A41640751F3B02C00014CF1D /* MarkerWindow.swift */,
+				A4D50D651F45AF2800962835 /* PlaceMarker.swift */,
+			);
+			name = Markers;
+			sourceTree = "<group>";
+		};
+		A4D50D691F45D01900962835 /* LocationService */ = {
+			isa = PBXGroup;
+			children = (
+				A4D50D6A1F45D03B00962835 /* LocationService.swift */,
+				A4D50D6C1F45D04B00962835 /* LocationServiceImpl.swift */,
+			);
+			name = LocationService;
+			sourceTree = "<group>";
+		};
+		A4DBA0FB1F321AD500999879 /* Display Manager */ = {
+			isa = PBXGroup;
+			children = (
+				A4DBA0FC1F321AFD00999879 /* AddDisplayManager.swift */,
+				A4316D771F42DD87009ED368 /* AddDisplayManagerDelegate.swift */,
+				A4DDBE8B1F472A7B00E46388 /* AddDisplayManagerDataSource.swift */,
+				A4E484361F4ABB9C00079E39 /* AddDisplayManagerActions.swift */,
+			);
+			name = "Display Manager";
+			sourceTree = "<group>";
+		};
+		A4DBA0FE1F321B0600999879 /* Display Manager */ = {
+			isa = PBXGroup;
+			children = (
+				A4EBF3981F309B9500CBF1D7 /* MapDisplayManager.swift */,
+				A4D50D671F45B68B00962835 /* MapDisplayManagerDelegate.swift */,
+			);
+			name = "Display Manager";
+			sourceTree = "<group>";
+		};
+		A4DBA0FF1F321BE900999879 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A4D50D641F45AF1200962835 /* Markers */,
+				A4EBF3861F306B4700CBF1D7 /* MapViewController.swift */,
+				A4B4F8C11F3496C60024D6E2 /* MapViewControllerIO.swift */,
+				A4DBA0FE1F321B0600999879 /* Display Manager */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A4DBA1001F321BF300999879 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A4EBF39C1F30C4B600CBF1D7 /* AddPlaceViewController.swift */,
+				A4E617411F3461B400B40299 /* AddPlaceViewControllerIO.swift */,
+				A4DBA0FB1F321AD500999879 /* Display Manager */,
+				A4E616E51F3334AA00B40299 /* Cells */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A4E616E41F3332B800B40299 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A4E617351F344F0200B40299 /* AddPlacePresenter.swift */,
+				A4316D7D1F42F597009ED368 /* AddPlaceModuleIO.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		A4E616E51F3334AA00B40299 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A4DBA1011F321E5D00999879 /* MapCell.swift */,
+				A4E617151F3365FB00B40299 /* MapCell.xib */,
+				A4E617181F336A7C00B40299 /* NameCell.swift */,
+				A4E617191F336A7C00B40299 /* NameCell.xib */,
+				A416409D1F3C6ED40014CF1D /* PhotoCell.swift */,
+				A416409E1F3C6ED40014CF1D /* PhotoCell.xib */,
+				A41640A61F3DA88E0014CF1D /* PriceCell.swift */,
+				A41640A71F3DA88E0014CF1D /* PriceCell.xib */,
+				A41640AE1F3DF9350014CF1D /* WorkingHoursCell.swift */,
+				A41640AF1F3DF9350014CF1D /* WorkingHoursCell.xib */,
+				A41F62D61F41B2A8006BB57D /* AddressCell.swift */,
+				A41F62D71F41B2A8006BB57D /* AddressCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		A4E616E61F3334BF00B40299 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A4316D8F1F44273A009ED368 /* Helpers */,
+				A4E617371F345CDF00B40299 /* Entities */,
+				A4E6173A1F345F1500B40299 /* BusinesLogicLayer */,
+				A4E616EA1F33351300B40299 /* ApplicationLayer */,
+				A4E616E91F33350800B40299 /* PresentationLayer */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		A4E616E81F3334E800B40299 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A4EBF3901F306B4700CBF1D7 /* Info.plist */,
+				A4EBF3A31F31C08F00CBF1D7 /* GoogleService-Info.plist */,
+				A4316D991F442E6F009ED368 /* main.swift */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A4E616E91F33350800B40299 /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				A4F83EAF1F4EE53700153F80 /* Extensions */,
+				A4316D961F442D38009ED368 /* Assemblies */,
+				A4EBF38D1F306B4700CBF1D7 /* LaunchScreen.storyboard */,
+				A4AAB7F11F38B2C4001D567A /* UserStories */,
+			);
+			name = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		A4E616EA1F33351300B40299 /* ApplicationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				A4CE14CC1F44325A006BE033 /* Assemblies */,
+				A4CE14CA1F443237006BE033 /* ApplicationInitializer.swift */,
+				A4EBF3841F306B4700CBF1D7 /* AppDelegate.swift */,
+			);
+			name = ApplicationLayer;
+			sourceTree = "<group>";
+		};
+		A4E616EB1F33352100B40299 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A4DDBE801F46E6D100E46388 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A4E617281F34497000B40299 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A4E617291F34499700B40299 /* MapPresenter.swift */,
+				A41640831F3B5BE60014CF1D /* MapModuleIO.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		A4E6172B1F344D8500B40299 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A4E6172C1F344D9C00B40299 /* MapInteractorIO.swift */,
+				A4E6172E1F344DB900B40299 /* MapInteractorImpl.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		A4E617301F344E3800B40299 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A4E617311F344E5000B40299 /* AddPlaceInteractorIO.swift */,
+				A4E617331F344E8A00B40299 /* AddPlaceInteractorImpl.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		A4E617371F345CDF00B40299 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				A4AAB7F41F39CF99001D567A /* PlaceM.swift */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		A4E6173A1F345F1500B40299 /* BusinesLogicLayer */ = {
+			isa = PBXGroup;
+			children = (
+				A4E6173B1F345F3800B40299 /* Services */,
+			);
+			name = BusinesLogicLayer;
+			sourceTree = "<group>";
+		};
+		A4E6173B1F345F3800B40299 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A4CE14D21F443F62006BE033 /* ServiceLayerAssembly.swift */,
+				A4D50D691F45D01900962835 /* LocationService */,
+				A4E6173C1F345F4300B40299 /* Firebase Service */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		A4E6173C1F345F4300B40299 /* Firebase Service */ = {
+			isa = PBXGroup;
+			children = (
+				A4CE14CF1F443B79006BE033 /* Assemblies */,
+				A4E6173D1F345F7700B40299 /* FirebaseService.swift */,
+				A4E6173F1F345F8400B40299 /* FirebaseServiceImpl.swift */,
+			);
+			name = "Firebase Service";
+			sourceTree = "<group>";
+		};
+		A4EBF3781F306B4700CBF1D7 = {
+			isa = PBXGroup;
+			children = (
+				A4EBF3831F306B4700CBF1D7 /* Find Place */,
+				A4D50D431F458A4000962835 /* Find PlaceTests */,
+				A4EBF3821F306B4700CBF1D7 /* Products */,
+				75F8B43612D4D5D9DB4EF708 /* Pods */,
+				060334958ED775DF361EAA34 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A4EBF3821F306B4700CBF1D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4EBF3811F306B4700CBF1D7 /* Find Place.app */,
+				A4D50D421F458A4000962835 /* Find PlaceTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4EBF3831F306B4700CBF1D7 /* Find Place */ = {
+			isa = PBXGroup;
+			children = (
+				A4E616EB1F33352100B40299 /* Resources */,
+				A4E616E81F3334E800B40299 /* Supporting Files */,
+				A4E616E61F3334BF00B40299 /* Classes */,
+			);
+			path = "Find Place";
+			sourceTree = "<group>";
+		};
+		A4EBF39E1F31A5B100CBF1D7 /* MapUserStory */ = {
+			isa = PBXGroup;
+			children = (
+				A4AAB8171F39DBAB001D567A /* Map.storyboard */,
+				A416409A1F3C612A0014CF1D /* Modules */,
+			);
+			name = MapUserStory;
+			sourceTree = "<group>";
+		};
+		A4EBF39F1F31A5CC00CBF1D7 /* AddPlaceUserStory */ = {
+			isa = PBXGroup;
+			children = (
+				A4AAB8191F39DBD0001D567A /* AddPlace.storyboard */,
+				A41640991F3C610F0014CF1D /* Modules */,
+			);
+			name = AddPlaceUserStory;
+			sourceTree = "<group>";
+		};
+		A4F5DCAA1F4582ED00B0EB97 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A4F5DCAB1F45830A00B0EB97 /* AuthInteractorIO.swift */,
+				A4F5DCAD1F4583A200B0EB97 /* AuthInteractor.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		A4F83EAF1F4EE53700153F80 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A4F83EB01F4EE55800153F80 /* UINavigationBar+States.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A4D50D411F458A4000962835 /* Find PlaceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4D50D4B1F458A4000962835 /* Build configuration list for PBXNativeTarget "Find PlaceTests" */;
+			buildPhases = (
+				09EDE2D2D0E1304638B7F336 /* [CP] Check Pods Manifest.lock */,
+				A4D50D3E1F458A4000962835 /* Sources */,
+				A4D50D3F1F458A4000962835 /* Frameworks */,
+				A4D50D401F458A4000962835 /* Resources */,
+				9BF5E2930F54418B7FDF6144 /* [CP] Embed Pods Frameworks */,
+				DAD54BC521FF5737D9A1032D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4D50D481F458A4000962835 /* PBXTargetDependency */,
+			);
+			name = "Find PlaceTests";
+			productName = "Find PlaceTests";
+			productReference = A4D50D421F458A4000962835 /* Find PlaceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A4EBF3801F306B4700CBF1D7 /* Find Place */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4EBF3931F306B4700CBF1D7 /* Build configuration list for PBXNativeTarget "Find Place" */;
+			buildPhases = (
+				F8500C1B3E2D5C8A5A03CC40 /* [CP] Check Pods Manifest.lock */,
+				A4EBF37D1F306B4700CBF1D7 /* Sources */,
+				A4EBF37E1F306B4700CBF1D7 /* Frameworks */,
+				A4EBF37F1F306B4700CBF1D7 /* Resources */,
+				A9DA5D1607AAC10F97E07D06 /* [CP] Embed Pods Frameworks */,
+				BAB687B4223C19E52642C401 /* [CP] Copy Pods Resources */,
+				A4316D791F42E3F1009ED368 /* ShellScript */,
+				A4316D731F42D827009ED368 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Find Place";
+			productName = "Find Place";
+			productReference = A4EBF3811F306B4700CBF1D7 /* Find Place.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A4EBF3791F306B4700CBF1D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Kirill Makarenko";
+				TargetAttributes = {
+					A4D50D411F458A4000962835 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = B4586UR56B;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A4EBF3801F306B4700CBF1D7;
+					};
+					A4EBF3801F306B4700CBF1D7 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = B4586UR56B;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A4EBF37C1F306B4700CBF1D7 /* Build configuration list for PBXProject "Find Place" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A4EBF3781F306B4700CBF1D7;
+			productRefGroup = A4EBF3821F306B4700CBF1D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4EBF3801F306B4700CBF1D7 /* Find Place */,
+				A4D50D411F458A4000962835 /* Find PlaceTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A4D50D401F458A4000962835 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4EBF37F1F306B4700CBF1D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A41640A01F3C6ED40014CF1D /* PhotoCell.xib in Resources */,
+				A41F62D91F41B2A8006BB57D /* AddressCell.xib in Resources */,
+				A4EBF3971F3085BB00CBF1D7 /* AuthMain.storyboard in Resources */,
+				A41640A91F3DA88E0014CF1D /* PriceCell.xib in Resources */,
+				A41640AD1F3DEC5B0014CF1D /* PlacePriceCell.xib in Resources */,
+				A4EBF3A41F31C08F00CBF1D7 /* GoogleService-Info.plist in Resources */,
+				A41640781F3B03030014CF1D /* MarkerWindow.xib in Resources */,
+				A4AAB81A1F39DBD0001D567A /* AddPlace.storyboard in Resources */,
+				A4EBF38F1F306B4700CBF1D7 /* LaunchScreen.storyboard in Resources */,
+				A4AAB8181F39DBAB001D567A /* Map.storyboard in Resources */,
+				A41640B11F3DF9350014CF1D /* WorkingHoursCell.xib in Resources */,
+				A4AAB81D1F39E804001D567A /* place.storyboard in Resources */,
+				A4E6171B1F336A7C00B40299 /* NameCell.xib in Resources */,
+				A4DDBE811F46E6D100E46388 /* Assets.xcassets in Resources */,
+				A4E617171F3365FB00B40299 /* MapCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09EDE2D2D0E1304638B7F336 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9BF5E2930F54418B7FDF6144 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Find PlaceTests/Pods-Find PlaceTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4316D731F42D827009ED368 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
+		};
+		A4316D791F42E3F1009ED368 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint autocorrect\nelse\n    echo \"warning: SwiftLint not installed\"\nfi";
+		};
+		A9DA5D1607AAC10F97E07D06 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Find Place/Pods-Find Place-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAB687B4223C19E52642C401 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Find Place/Pods-Find Place-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAD54BC521FF5737D9A1032D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Find PlaceTests/Pods-Find PlaceTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8500C1B3E2D5C8A5A03CC40 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A4D50D3E1F458A4000962835 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4D50D521F458B4600962835 /* AuthViewControllerTests.swift in Sources */,
+				A4D50D591F45938A00962835 /* AuthRouterInputMock.swift in Sources */,
+				A4D50D571F45924700962835 /* AuthPresenterTests.swift in Sources */,
+				A4D50D551F45903C00962835 /* AuthViewOutputMock.swift in Sources */,
+				A4D50D5D1F45A12D00962835 /* AuthInteractorTests.swift in Sources */,
+				A4D50D5B1F4593F800962835 /* AuthInteractorInputMock.swift in Sources */,
+				A4D50D611F45A56C00962835 /* AuthInteractorOutputMock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4EBF37D1F306B4700CBF1D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4F83EB11F4EE55800153F80 /* UINavigationBar+States.swift in Sources */,
+				A4E6171A1F336A7C00B40299 /* NameCell.swift in Sources */,
+				A41640931F3C39FE0014CF1D /* PlaceModuleIO.swift in Sources */,
+				A4EBF39D1F30C4B600CBF1D7 /* AddPlaceViewController.swift in Sources */,
+				A4AAB7F51F39CF99001D567A /* PlaceM.swift in Sources */,
+				A4E617341F344E8A00B40299 /* AddPlaceInteractorImpl.swift in Sources */,
+				A4E6172F1F344DB900B40299 /* MapInteractorImpl.swift in Sources */,
+				A4CE14D31F443F62006BE033 /* ServiceLayerAssembly.swift in Sources */,
+				A4E6173E1F345F7700B40299 /* FirebaseService.swift in Sources */,
+				A41640811F3B404A0014CF1D /* PlaceDisplayManager.swift in Sources */,
+				A4EBF3871F306B4700CBF1D7 /* MapViewController.swift in Sources */,
+				A4F5DCA91F4582BD00B0EB97 /* AuthRouterInput.swift in Sources */,
+				A416409F1F3C6ED40014CF1D /* PhotoCell.swift in Sources */,
+				A4E617361F344F0200B40299 /* AddPlacePresenter.swift in Sources */,
+				A4CE14D61F4442E4006BE033 /* MapModuleAssembly.swift in Sources */,
+				A4316D921F44275A009ED368 /* Assembly.swift in Sources */,
+				A4D50D681F45B68B00962835 /* MapDisplayManagerDelegate.swift in Sources */,
+				A4B4F8C21F3496C60024D6E2 /* MapViewControllerIO.swift in Sources */,
+				A4AAB7E91F38A8B3001D567A /* AuthPresenter.swift in Sources */,
+				A4DDBE8C1F472A7B00E46388 /* AddDisplayManagerDataSource.swift in Sources */,
+				A41640761F3B02C00014CF1D /* MarkerWindow.swift in Sources */,
+				A416407F1F3B3E730014CF1D /* PlaceViewController.swift in Sources */,
+				A4AAB7EB1F38A8BE001D567A /* AuthRouter.swift in Sources */,
+				A4DBA1021F321E5D00999879 /* MapCell.swift in Sources */,
+				A4D50D6B1F45D03B00962835 /* LocationService.swift in Sources */,
+				A4F5DCAC1F45830A00B0EB97 /* AuthInteractorIO.swift in Sources */,
+				A41640841F3B5BE60014CF1D /* MapModuleIO.swift in Sources */,
+				A4316D7E1F42F597009ED368 /* AddPlaceModuleIO.swift in Sources */,
+				A41640A51F3C84D10014CF1D /* PlaceInteractorIO.swift in Sources */,
+				A4F5DCAE1F4583A200B0EB97 /* AuthInteractor.swift in Sources */,
+				A4DBA0FD1F321AFD00999879 /* AddDisplayManager.swift in Sources */,
+				A4E617321F344E5000B40299 /* AddPlaceInteractorIO.swift in Sources */,
+				A416408A1F3C31710014CF1D /* PlaceRouter.swift in Sources */,
+				A4D50D6D1F45D04B00962835 /* LocationServiceImpl.swift in Sources */,
+				A41640B01F3DF9350014CF1D /* WorkingHoursCell.swift in Sources */,
+				A4E484371F4ABB9C00079E39 /* AddDisplayManagerActions.swift in Sources */,
+				A4EBF3991F309B9500CBF1D7 /* MapDisplayManager.swift in Sources */,
+				A4316D951F44294F009ED368 /* AuthModuleAssembly.swift in Sources */,
+				A4CE14CE1F443270006BE033 /* ApplicationAssembly.swift in Sources */,
+				A4AAB7D61F3877BA001D567A /* AuthViewController.swift in Sources */,
+				A41640AC1F3DEC5B0014CF1D /* PlacePriceCell.swift in Sources */,
+				A4CE14D91F445D69006BE033 /* AddPlaceModuleAssembly.swift in Sources */,
+				A4E617421F3461B400B40299 /* AddPlaceViewControllerIO.swift in Sources */,
+				A41640A81F3DA88E0014CF1D /* PriceCell.swift in Sources */,
+				A4E6172D1F344D9C00B40299 /* MapInteractorIO.swift in Sources */,
+				A4CE14DC1F446A6D006BE033 /* PlaceModuleAssembly.swift in Sources */,
+				A4316D9A1F442E6F009ED368 /* main.swift in Sources */,
+				A4316D981F442D56009ED368 /* PresentationLayerAssembly.swift in Sources */,
+				A4E617401F345F8400B40299 /* FirebaseServiceImpl.swift in Sources */,
+				A41F62D81F41B2A8006BB57D /* AddressCell.swift in Sources */,
+				A4D50D661F45AF2800962835 /* PlaceMarker.swift in Sources */,
+				A4EBF3851F306B4700CBF1D7 /* AppDelegate.swift in Sources */,
+				A4316D7C1F42F35A009ED368 /* AddPlaceRouter.swift in Sources */,
+				A4CE14CB1F443237006BE033 /* ApplicationInitializer.swift in Sources */,
+				A4E6172A1F34499700B40299 /* MapPresenter.swift in Sources */,
+				A416408F1F3C31C30014CF1D /* PlaceViewControllerIO.swift in Sources */,
+				A4AAB7ED1F38A8DE001D567A /* AuthViewControllerIO.swift in Sources */,
+				A4316D781F42DD87009ED368 /* AddDisplayManagerDelegate.swift in Sources */,
+				A41640A31F3C84700014CF1D /* PlaceInteractorImpl.swift in Sources */,
+				A41640881F3C31640014CF1D /* PlacePresenter.swift in Sources */,
+				A4AAB7E41F389E07001D567A /* MapRouter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A4D50D481F458A4000962835 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4EBF3801F306B4700CBF1D7 /* Find Place */;
+			targetProxy = A4D50D471F458A4000962835 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A4EBF38D1F306B4700CBF1D7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4EBF38E1F306B4700CBF1D7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A4D50D491F458A4000962835 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E1E766F83B75D2C0920D70A /* Pods-Find PlaceTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = B4586UR56B;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAnalytics\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAuth\"",
+					"\"${PODS_ROOT}/Firebase/Core/Sources\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseCore\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseDatabase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseInstanceID\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseStorage\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleMaps\"",
+					"\"${PODS_ROOT}/Headers/Public/GooglePlacePicker\"",
+					"\"${PODS_ROOT}/Headers/Public/GooglePlaces\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleSignIn\"",
+					"\"${PODS_ROOT}/Headers/Public/SwiftLint\"",
+				);
+				INFOPLIST_FILE = "Find PlaceTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Makarenko.Find-PlaceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Find Place.app/Find Place";
+			};
+			name = Debug;
+		};
+		A4D50D4A1F458A4000962835 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0537AC1133843F46ADD1DC3 /* Pods-Find PlaceTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = B4586UR56B;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAnalytics\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAuth\"",
+					"\"${PODS_ROOT}/Firebase/Core/Sources\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseCore\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseDatabase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseInstanceID\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseStorage\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleMaps\"",
+					"\"${PODS_ROOT}/Headers/Public/GooglePlacePicker\"",
+					"\"${PODS_ROOT}/Headers/Public/GooglePlaces\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleSignIn\"",
+					"\"${PODS_ROOT}/Headers/Public/SwiftLint\"",
+				);
+				INFOPLIST_FILE = "Find PlaceTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Makarenko.Find-PlaceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Find Place.app/Find Place";
+			};
+			name = Release;
+		};
+		A4EBF3911F306B4700CBF1D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A4EBF3921F306B4700CBF1D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A4EBF3941F306B4700CBF1D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81030B75D2643790F469CC71 /* Pods-Find Place.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = B4586UR56B;
+				INFOPLIST_FILE = "Find Place/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Makarenko.FindPlace.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A4EBF3951F306B4700CBF1D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6E2A49CA973E90FDE52C06E /* Pods-Find Place.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = B4586UR56B;
+				INFOPLIST_FILE = "Find Place/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Makarenko.FindPlace.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A4D50D4B1F458A4000962835 /* Build configuration list for PBXNativeTarget "Find PlaceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4D50D491F458A4000962835 /* Debug */,
+				A4D50D4A1F458A4000962835 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4EBF37C1F306B4700CBF1D7 /* Build configuration list for PBXProject "Find Place" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4EBF3911F306B4700CBF1D7 /* Debug */,
+				A4EBF3921F306B4700CBF1D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4EBF3931F306B4700CBF1D7 /* Build configuration list for PBXNativeTarget "Find Place" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4EBF3941F306B4700CBF1D7 /* Debug */,
+				A4EBF3951F306B4700CBF1D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A4EBF3791F306B4700CBF1D7 /* Project object */;
+}
